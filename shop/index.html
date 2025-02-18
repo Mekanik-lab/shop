@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="./images/logo.webp">
+    <title>Sklep</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="./images/logo.webp" alt="logo"></a>
+        <nav>
+            <ol>
+                <li><a href="#">Rabaty</a></li>
+                <li><a href="#">Koszty dostawy</a></li>
+                <li><a href="#">Reklamacje i zwroty</a></li>
+                <li><a href="#">Raty</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#">Produkty</a>
+                    <ul class="submenu">
+                      <li><a href="#">Smycz</a></li>
+                      <li><a href="#">Miska</a></li>
+                      <li><a href="#">Poidło</a></li>
+                    </ul>
+                </li>
+                <li id="basket" class="icon"><img src="./images/basket.webp" alt="koszyk"></li>
+                <li id="login" class="icon"><img src="./images/user.webp" alt="user"></li>
+            </ol>
+        </nav>
+    </header>
+    <aside id="basket-card" class="card">
+        <button id="basket-card__close-btn" class="card__close-btn">&times;</button>
+        <h2 id="basket-card__info" class="card__info">Twój koszyk jest pusty</h2>
+        <button id="basket-card__action-btn" class="card__action-btn">Dodaj produkty</button>
+    </aside>
+    <aside id="login-card" class="card">
+        <button id="login-card__close-btn" class="card__close-btn">&times;</button>
+        <h2 id="login-card__info" class="card__info">Zaloguj się</h2>
+        <form id="login-form">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Wpisz swój e-mail" required>
+            
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" placeholder="Wpisz swoje hasło" required>
+        </form>
+        <button type="submit" id="login-card__action-btn" class="card__action-btn">Zaloguj się</button>
+    </aside>
+    <main>
+        <section id="main-section__img" >
+            <img src="./images/main.webp" alt="akcesoria" id="section-image">
+        </section>
+        <section id="main-section__info">
+            <span>Najlepsza jakość</span>
+            <h2>Sklep z akcesoriami <br> dla zwierząt</h2>
+            <span>Na naszym sklepie znajdziesz najlepsze akcesoria z szybką dostawą</span>
+            <button type="submit">SPRAWDŹ PRODUKTY</button>
+        </section>
+    </main>
+    <section id="products">
+        <h2>Produkty</h2>
+        <figure>
+            <img src="./images/products/product1.webp" alt="produkt">
+            <figcaption>Smycz</figcaption>
+            <button type="button">KUP TERAZ</button>
+        </figure>
+        <figure>
+            <img src="./images/products/product2.webp" alt="produkt">
+            <figcaption>Miska</figcaption>
+            <button type="button">KUP TERAZ</button>
+        </figure>
+        <figure>
+            <img src="./images/products/product3.webp" alt="produkt">
+            <figcaption>Poidło</figcaption>
+            <button type="button">KUP TERAZ</button>
+        </figure>
+    </section>
+    <footer>
+        <section id="footer-top">
+            <article id="comapny-details">
+                <h2>Dane firmy</h2>
+                <p><strong>Nazwa:</strong> Sklep Zoologiczny "Pupilek" Sp. z o.o.</p>
+                <p><strong>NIP:</strong> 123-456-78-90</p>
+                <p><strong>Adres:</strong> ul. Zwierzęca 10, 00-000 Warszawa</p>
+                <p><strong>Telefon:</strong> +48 123 456 789</p>
+                <p><strong>E-mail:</strong> kontakt@pupilek.pl</p>
+            </article>
+            <article id="company-socialmedia">
+                <a href="#"><img src="./images/twitter.webp" alt="twitter"></a>
+                <a href="#"><img src="./images/facebook.webp" alt="facebook"></a>
+            </article>
+        </section>
+        <h2 id="footer-bottom">Strzelecki Dawid</h2>
+    </footer>
+    <div id="overlay" class="overlay"></div>
+    <script src="app.js"></script>
+</body>
+</html>
